@@ -27,6 +27,11 @@
             <preference name="GEOLOCATION_USAGE_DESCRIPTION" default="This app is using location services"/>
             <config-file target="*-Info.plist" parent="NSLocationWhenInUseUsageDescription">
                 <string>$GEOLOCATION_USAGE_DESCRIPTION</string>
-            </config-file>            
+            </config-file>  
+            
+            <preference name="GEOLOCATION_ALWAYS_USAGE_DESCRIPTION" default="This app is using location services"/>
+            <config-file target="*-Info.plist" parent="NSLocationAlwaysUsageDescription">
+                <string>$GEOLOCATION_USAGE_DESCRIPTION</string>
+            </config-file>             
         </platform>
     </plugin>
